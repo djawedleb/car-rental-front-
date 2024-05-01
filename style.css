@@ -290,7 +290,7 @@ html{
   transform: translateX(-50%);
   width: 200%; /* Adjust the width as needed */
   height: calc(100% - 100px); /* Adjust according to the height of your header */
-  background-image: url('/img/header.jpg'); /* Add the path to your image */
+  background-image: url('img/header.jpg'); /* Add the path to your image */
   background-size: cover;
   filter: blur(2px); /* Adjust the blur as needed */
   z-index: -1;
