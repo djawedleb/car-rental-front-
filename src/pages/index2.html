@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index1.html" class="logo"> <span>Auto</span>Mall  </a>
+      <nav class="navbar">
+          <a href="index1.html#welcomeMessage">Home</a>
+          <a href="index1.html#vehicles">Cars</a>
+          <a href="index1.html#reviews">Reviews</a>
+          <a href="index1.html#contact">Contact</a>
+          <a href="#add-listing-form" class="add-listing">add-car</a>
+      </nav>
+          <div id="login">
+              <button class="btn">login<i class="far fa-user"></i></button>
+          </div>
+  </header>
+  <div class="login-form">
+      <span class="fas fa-times" id="close-login-form">
+      </span>
+      <form action="">
+          <h3>user login</h3>
+          <input type="email" placeholder="Email" class="box">
+          <input type="password" placeholder="password" class="box"><br>
+          <p>forget your password? <a href="#">click here</a></p>
+          <input type="submit" value="Login now" class="btn">
+          <a href="adminside.html" class="btn">login as admin</a>
+          <p>Don't have an acount? <a href="#">create one</a></p>
+      </form>
+  </div>
+  <div class="add-listing-form" id="add-listing-form">
+      <span class="fas fa-times" id="close-add-listing-form"></span>
+      <form action="">
+          <h3>car-information</h3>
+          <input type="text" placeholder="owner-Name" class="box">
+          <input type="number" placeholder="owner-Number" class="box">
+          <input type="email" placeholder="owner-Email" class="box">
+          <input type="text" placeholder="Localisation" class="box">
+          <select class="box">
+              <option value="new">New</option>
+              <option value="new">used as New</option>
+              <option value="used">Used</option>
+          </select>
+          <input type="text" placeholder="Price" class="box">
+          <textarea placeholder="Description" class="box"></textarea>
+          <input type="file" multiple accept="image/*" class="box">
+          <input type="submit" value="Submit" class="btn">
+      </form>
+  </div>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "../assets/img/02.jpg" alt = "shoe image">
+              <img src = "../assets/img/02.jpg" alt = "shoe image">
+              <img src = "../assets/img/02.jpg" alt = "shoe image">
+              <img src = "../assets/img/02.jpg" alt = "shoe image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "../assets/img/02.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "../assets/img/02.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "../assets/img/02.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "../assets/img/02.jpg" alt = "shoe image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Mercedes A220</h2>
+          <a href = "index1.html" class = "product-link">visit Automall</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(3)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "new-price"> Price: <span>$25000.00</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <ul>
+              <li>Color: <span>Black</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Sport</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+         
+
+         
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="box-container">
+
+          <div class="box">
+              <h3>our branches</h3>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Algeria-branches</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>France-branches</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Dubai-branches</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Tunisia-branches</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Morroco-branches</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Libya-branches</a>
+          </div>
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#"><i class="fas fa-phone"></i> +213-546-7890</a>
+              <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+              <a href="#"><i class="fas fa-envelope"></i> Djawed-Dev@gmail.com</a>
+              <a href="#"><i class="fas fa-map-marker-alt"></i>Algeria , Constantine - 400104</a>
+          </div>
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+              <a href="#"><i class="fab fa-twitter"></i> twitter </a>
+              <a href="#"><i class="fab fa-instagram"></i> instagram </a>
+              <a href="#"><i class="fab fa-linkedin"></i> linkedin </a>
+              <a href="#"><i class="fab fa-pinterest"></i> pinterest </a>
+
+          </div>
+      </div>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>
